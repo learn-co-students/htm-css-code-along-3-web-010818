@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Elsie);
+@import url(https://fonts.googleapis.com/css?family=Clicker+Script|Elsie)
+
+/*this is a comment*/
+
+
+/*CSS Syntax:
+
+selector {
+	property: Value;
+	property: value;
+}
+*/
+
+
+/* Type Selector */
+
+p {
+	font-size: 1em; /* is equal to 16px, you can use pt, 100%, 1em */
+	line-height: 1.5em;
+}
+
+figcaption {
+/*	font-weight: normal;
+	font-size: 0.75em;
+	line-height: 1.5em;
+	font-family: Georgia, "New Times Roman", serif;*/
+	font: normal 0.75em/1.5em 'Elsie', cursive; 
+	color: blue; /*hex number or words*/ 
+	text-align: right;
+}
+
+/* Class selectors (applied to as many elements as you like) */ 
+
+.milk-text { /* select elements with class="milk-text" .=class */
+	font: bold 2.6em Else, cursive;
+	color: white;
+	text-shadow: 0 2px 3px #000;
+}
+
+/*ID Selector (apply to one unique element per a page) #=ID */
+
+#logo {
+	background: aqua;
+}
+
+/* Descendent Selector select elements within a parent element */
+
+#logo h1 {     /*will only style h1 of inside id="logo"*/
+	font-family: "Clicker Script", cursive;
+}
+
+#logo h2 {
+	font-family: 'Elsie', cursive; 
+}
+
+/* Psuedo Class Selector -> select an element based on it's relationship with other elements */
+
+/* descendent (#details a) psuedo(:link) */
+	#details a:link, #details a:visited {
+		color: black;
+		text-decoration: none;
+	}
+
+
+	#details a:hover {
+		color: black;
+		text-decoration: underline;
+	}
+
+#details a:active {
+		color: red;
+	}
+
+
+
+
+
+
+
